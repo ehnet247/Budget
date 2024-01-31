@@ -1,4 +1,4 @@
-namespace Budget.API
+namespace Budget.Api
 {
     public class WeatherForecast
     {

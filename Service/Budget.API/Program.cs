@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Budget.Api.Models;
 
-namespace Budget.API
-{
+namespace Budget.API;
+
     public class Program
     {
         public static void Main(string[] args)
@@ -10,8 +12,11 @@ namespace Budget.API
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddDbContext<BudgetContext>(opt =>
+        opt.UseMySQL(
+    opt.UseInMemoryDatabase("TodoList"));
+        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
@@ -33,4 +38,3 @@ namespace Budget.API
             app.Run();
         }
     }
-}

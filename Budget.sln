@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{366D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudgetMaui", "Clients\BudgetMaui\BudgetMaui.csproj", "{181F0157-7A9E-4E1E-AAB9-D92BF45FC019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budget.API", "Service\Budget.API\Budget.API.csproj", "{9F3DA5D3-9550-49BF-BC3C-E4D3ED52AD0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budget.Api", "Service\Budget.API\Budget.Api.csproj", "{9F3DA5D3-9550-49BF-BC3C-E4D3ED52AD0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
