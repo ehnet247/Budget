@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net8.0-android</TargetFrameworks>
@@ -67,5 +67,11 @@
         <PackageReference Include="CommunityToolkit.Maui" Version="7.*" />
         <PackageReference Include="CommunityToolkit.Maui.Markup" Version="4.*" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="Views\SettingsUsersPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
     </ItemGroup>
 </Project>

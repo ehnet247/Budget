@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
+<TabbedPage
     x:Class="BudgetMaui.Views.SettingsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -7,13 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:BudgetMaui"
     xmlns:vm="clr-namespace:BudgetMaui.ViewModels"
+    xmlns:views="clr-namespace:BudgetMaui.Views"
     Title="{Binding Title}"
     x:DataType="vm:SettingsViewModel"
     mc:Ignorable="d">
-    <ContentPage.Content>
-        <Label
-            HorizontalOptions="Center"
-            Text="Settings"
-            VerticalOptions="Center" />
-    </ContentPage.Content>
-</ContentPage>
+    <NavigationPage Title="Settings">
+        <x:Arguments>
+            <views:SettingsUsersPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>

@@ -1,6 +1,6 @@
 ﻿namespace BudgetMaui.Views
 {
-    public partial class SettingsPage : ContentPage
+    public partial class SettingsPage : TabbedPage
     {
         public SettingsPage()
         {
